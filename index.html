@@ -131,7 +131,7 @@ function displayProducts(products) {
       </div>
       <h3>${p.name}</h3>
       <p>${p.description}</p>
-      <p class="price">$${p.price}</p>
+      <p class="price">$₵{p.price}</p>
     `;
     div.addEventListener('click', () => openModal(p));
     productsDiv.appendChild(div);
@@ -151,7 +151,7 @@ function openModal(product) {
   modalImage.src = product.imageURL;
   modalName.textContent = product.name;
   modalDescription.textContent = product.description;
-  modalPrice.textContent = "$" + product.price;
+  modalPrice.textContent = "₵" + product.price;
 
   const phone = "0536997936"; // Replace with your number
   const message = `Hello, I'm interested in your product:\n\nName: ${product.name}\nDescription: ${product.description}\nPrice: $${product.price}`;
@@ -175,3 +175,4 @@ modalBg.addEventListener('click', e => {
 
 </body>
 </html>
+
