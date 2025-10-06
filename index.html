@@ -131,7 +131,7 @@ function displayProducts(products) {
       </div>
       <h3>${p.name}</h3>
       <p>${p.description}</p>
-      <p class="price">$₵{p.price}</p>
+      <p class="price">₵${p.price}</p>
     `;
     div.addEventListener('click', () => openModal(p));
     productsDiv.appendChild(div);
@@ -175,4 +175,5 @@ modalBg.addEventListener('click', e => {
 
 </body>
 </html>
+
 
