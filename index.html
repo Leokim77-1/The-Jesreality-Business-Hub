@@ -154,7 +154,7 @@ function openModal(product) {
   modalPrice.textContent = "₵" + product.price;
 
   const phone = "0536997936"; // Replace with your number
-  const message = `Hello, I'm interested in your product:\n\nName: ${product.name}\nDescription: ${product.description}\nPrice: $${product.price}`;
+  const message = `Hello, I'm interested in your product:\n\nName: ${product.name}\nDescription: ${product.description}\nPrice: ₵${product.price}`;
 
   callLink.href = `tel:${phone}`;
   whatsappLink.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -175,5 +175,6 @@ modalBg.addEventListener('click', e => {
 
 </body>
 </html>
+
 
 
